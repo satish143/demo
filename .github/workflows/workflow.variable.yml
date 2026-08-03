@@ -39,5 +39,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your $name project.
+          echo ${{"var.name"}}
         env:
           name: "sai"
