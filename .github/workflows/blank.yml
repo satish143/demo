@@ -29,4 +29,4 @@ jobs:
       - name: Run a multi-line script
         run: ls; cat /etc/os-release
       - name: Github context veriable
-        run: echo ${{github.env}} and ${{github.workflow}} and ${{github.repositoryUrl}}
+        run: echo ${{github.env}} and ${{github.workflow}} and ${{github.repositoryUrl}} and ${{github.token}}
