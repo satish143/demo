@@ -27,6 +27,8 @@ jobs:
       - name: Github context veriable
         run: echo ${{github.env}} and ${{github.workflow}} and ${{github.repositoryUrl}} and ${{github.triggering_actor}} and ${{github.retention_days}} and ${{github.repository_owner}}
       - name: Secret veriable
-        run: echo ${{secrets.my_secret}};${{secrets.my_secret}}           
+        run: |
+          echo "${{secrets.my_secret}}"
+          ${{secrets.my_secret}}           
       - name: Config veriable
         run: echo ${{vars.name}}
