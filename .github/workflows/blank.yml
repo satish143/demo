@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
     inputs:
       username: 
-      description: 'A username passed from the caller workflow'
-      default: 'Ramesh'
-      required: false
-      type: string
+        description: 'A username passed from the caller workflow'
+        default: 'Ramesh'
+        required: false
+        type: string
 jobs:
   build:
     runs-on: ubuntu-latest
