@@ -56,4 +56,5 @@ jobs:
         run: terraform output        
       - name: Terraform destory
         run: |
-          terraform destory -auto-approve
+          terraform destroy -auto-approve
+
