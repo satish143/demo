@@ -49,7 +49,7 @@ jobs:
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main'
         run: |
-          terraform destroy -auto-approve 
+          terraform apply -auto-approve 
 
       - name: Show Outputs
         if: github.ref == 'refs/heads/main'
