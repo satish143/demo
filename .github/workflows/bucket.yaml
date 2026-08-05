@@ -31,7 +31,7 @@ jobs:
         run: terraform init
       - name: Terraform plan
         run: terraform plan
-     # - name: Terraform Cretae
-      #  run: |
-       #   terraform apply \
-        #    -auto-approve
+      - name: Terraform Cretae
+        run: |
+          terraform apply \
+            -auto-approve
