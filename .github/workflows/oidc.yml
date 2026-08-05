@@ -51,8 +51,8 @@ jobs:
       - name: Show Outputs
         if: github.ref == 'refs/heads/main'
         run: terraform output        
-      - name: Terraform destory
-        if: github.ref == 'refs/heads/main'
-        run: |
-          terraform destroy -auto-approve
+    #  - name: Terraform destory
+     #   if: github.ref == 'refs/heads/main'
+      #  run: |
+       #   terraform destroy -auto-approve
 
