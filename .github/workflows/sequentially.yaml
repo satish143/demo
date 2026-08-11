@@ -1,6 +1,15 @@
 name: seq
 #on: workflow_dispatch
-on: push
+on: 
+  push:
+    branchs: 
+      - main
+      - dev
+
+  pull_request:
+    branchs:
+      - main
+ 
 jobs:
   build:
     runs-on: ubuntu-latest
