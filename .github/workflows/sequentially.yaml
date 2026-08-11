@@ -1,0 +1,18 @@
+name: seq
+on: workflow_dispatch
+jobs:
+  build:
+    runs_on: ubuntu-latest
+    steps:
+      - name: "build war file"
+        run: echo "create new build file"
+  test:
+    runs_on: ubuntu-latest
+    steps:
+      - name: "test the war file"
+        run: echo "testing build files"
+  deploy:
+    runs_on: ubuntu-latest
+    steps:
+      - name: "Deploy the build file"
+        run: echo "Deploy this build in dev env"
