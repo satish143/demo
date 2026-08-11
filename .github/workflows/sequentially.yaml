@@ -8,11 +8,13 @@ jobs:
         run: echo "create new build file"
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: "test the war file"
         run: echo "testing build files"
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: "Deploy the build file"
         run: echo "Deploy this build in dev env"
