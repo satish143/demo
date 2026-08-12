@@ -1,14 +1,5 @@
 name: seq
-#on: workflow_dispatch
-on: 
-  push:
-    branchs: 
-      - main
-      - dev
-
-  pull_request:
-    branchs:
-      - main
+on: workflow_dispatch
  
 jobs:
   build:
