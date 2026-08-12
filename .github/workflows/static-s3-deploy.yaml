@@ -12,6 +12,8 @@ jobs:
     steps: 
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: List of file
+        runs: ls 
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -20,4 +22,4 @@ jobs:
           aws-region: us-east-1
       - name: Upload files to S3
         run: |
-          aws s3 cp ./dist s3://s3-test357-dev / --recursive         
+          aws s3 cp index.html s3://s3-test357-dev / --recursive         
