@@ -1,0 +1,8 @@
+name: Or condition Demo
+on: push
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run for satish or sai
+        run: echo "github.actor"
