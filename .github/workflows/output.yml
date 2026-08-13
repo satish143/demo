@@ -1,0 +1,11 @@
+name: output on demo
+on: workflow-dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step One
+        id: step1
+        run: echo "version=0.0.1" >> $GITHUB_OUTPUT
+      - name: Setp two
+        run: echo " this version is ${{ steps.step1.output.version }}
