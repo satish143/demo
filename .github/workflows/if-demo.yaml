@@ -3,7 +3,7 @@ on:
   push:
     brnaches:
       - main
-      - devlop
+      #- devlop
 jobs:
   demo:
     runs-on: ubuntu-latest
