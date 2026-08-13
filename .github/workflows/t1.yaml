@@ -2,7 +2,7 @@ name: t1
 on: workflow_dispatch
 jobs:
   satish:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Step one
         id: sai
