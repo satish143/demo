@@ -1,0 +1,11 @@
+name: t1
+on: workflow_dispatch
+jobs:
+  satish:
+    runs_on: ubuntu_latest
+    steps:
+      - name: Step one
+        id: sai
+        run: echo "satish=SRI" >> $GITHUB_OUTPUT
+      - name: Step two
+        run: echo "this is my name ${{ steps.sai.outputs.satish }}"  
