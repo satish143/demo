@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run for satish or sai
-        run: echo ${{github.actor}
+        run: echo ${{github.actor}}
       - name: Run for satish143 user
         if: github.actor == 'satish143'
         run: echo "My name is satish143"
