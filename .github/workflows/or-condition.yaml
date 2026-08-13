@@ -8,4 +8,4 @@ jobs:
         run: echo ${{github.actor}
       - name: Run for satish143 user
         if: github.actor == 'satish143'
-        run: echo "My name is satish143"}
+        run: echo "My name is satish143"
